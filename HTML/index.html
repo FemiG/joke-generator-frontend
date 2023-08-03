@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts============================================== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Joke Generator</title>
+</head>
+<body>
+    <nav class="title">
+        <h1>Joke Generator.</h1>
+    </nav>
+    <div class = "container">
+            <div class = "click-box">
+            <h1>Generate a Random Pun.</h1>
+            <p>Disclaimer: We will not take on any liability for any mental anguish these bad jokes may cause. Thank you for trying our service!</p>
+            <button id="btn1" class="btn" href="#">Click to get a joke</button>
+        </div>
+        <div class = "quote-box">
+            <div class="output" id="output">
+            </div>
+        </div>
+        <div class = "enter-box">
+            <h1>Insert Your Own Pun Into the Database.</h1>
+            <p>Disclaimer: Please insert the most cringe worthy pun or joke you can come up with.</p>
+            <form action=""> 
+                <label class ="pun"for="pun">Please enter joke index here</label>
+                <input class="pun"name="number" id="number" placeholder = "Integer above 20" title = "Above 20"/><br>
+                <label class="joke" for="joke">Please place your pun here</label>
+                <input class="joke" name="joke" id="joke"  placeholder = "Enter joke here" title="Enter joke here"/><br>
+                <input type="submit" class ="btn" id="post_btn" href="#">
+            </form>
+        </div>
+        <div class = "correct-box">
+            <h1>Replace an Existing Joke to Help Us Stay Relevant.</h1>
+            <p>Disclaimer: We will not take on any liability for any mental anguish these bad jokes may cause. Thank you for trying our service!</p>
+            <form action="" class="correct-form" id="correct-form"> 
+                <label class="pun" for="pun">Please enter joke index here: </label>
+                <input class="pun" name="number" id="correct_number"  placeholder = "An existing integer" title = "Above 20"/><br>
+                <label class="joke"for="joke">Please place your pun here: </label>
+                <input class="joke" id="correct_joke"  placeholder = "Enter joke here" title="Enter joke here"/><br>
+                <input type="submit" class ="btn" id="patch_btn" href="#">
+             </form>
+        </div>
+        <div class = "delete-box">
+            <h1>Remove a Joke.</h1>
+            <p>Disclaimer: Do it I dare you</p>
+            <form action="" class="correct-form" id="correct-form"> 
+                <label class="pun" for="pun">Please enter joke index here: </label>
+                <input class="pun" name="number" id="delete_number"  placeholder = "An existing integer" title = "Above 20"/><br>
+                <input type="submit" class ="btn" id="delete_btn" href="#">
+             </form>
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+   
+</body>
+</html>
